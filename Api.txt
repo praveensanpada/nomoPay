@@ -1,0 +1,76 @@
+
+================================== Auth Api =====================================
+
+
+1) http://65.0.203.132:3001/api/v1/auth/get-email-otp
+=>
+{
+	"email":"praveen@gmail.com"
+}
+
+-----------------------------------------------------------------------------------------
+
+2) http://65.0.203.132:3001/api/v1/auth/verify-email-otp
+=>
+{
+	"email":"praveen@gmail.com",
+	"firstName":"Praveen",
+	"lastName":"Sanpada",
+	"password":"Nomoex",
+	"emailOtpKey":"747f4f439efb93633c8979fe1513ec8e5e0464368afd272264fa9f6cef72b72c.1656411754157",
+	"emailOtp":"1230"
+}
+
+-----------------------------------------------------------------------------------------
+
+3) http://65.0.203.132:3001/api/v1/auth/get-phone-otp
+=>
+{
+	"phoneNumber":"7225854655",
+    "countryCode": "+91"
+}
+
+-----------------------------------------------------------------------------------------
+
+4) http://65.0.203.132:3001/api/v1/auth/verify-phone-otp
+=>
+{
+	"email":"praveen@gmail.com",
+	"firstName":"Praveen",
+	"lastName":"Sanpada",
+	"password":"Nomoex",
+	"phoneNumber":"7225854655",
+	"countryCode":"+91",
+	"phoneOtpKey":"a0288a18b87dc44c75d65043689ab97fbe577717bc2bc8c154aa2dbce5484181.1656411933366",
+	"phoneOtp":"9576"
+}
+
+-----------------------------------------------------------------------------------------
+
+5) http://65.0.203.132:3001/api/v1/auth/login( MOBILE )
+=>
+{
+	"phoneNumber":"7225854656",
+	"countryCode":"+91",
+	"password":"Nomoex"
+}
+
+-----------------------------------------------------------------------------------------
+
+6) http://65.0.203.132:3001/api/v1/auth/verify-user
+=>
+{
+	"phoneNumber":"7225854655",
+	"countryCode": "+91",
+    "phoneOtpKey":"f45fe3ccef3ecf4bd29a4c17ea0488b15261c6e4863034f303a09fb153fdb29f.1656489394421",
+	"phoneOtp":"1083"
+}
+
+-----------------------------------------------------------------------------------------
+
+7) http://65.0.203.132:3001/api/v1/auth/login ( EMAIL )
+=> 
+{
+	"email":"praveen@gmail.com",
+	"password":"Nomoex"
+}
